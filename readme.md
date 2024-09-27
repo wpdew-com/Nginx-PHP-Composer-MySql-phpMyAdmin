@@ -69,7 +69,7 @@ The following tools were used in this project:
 ## Установка і запуск проекту. 
 
 ```
-git clone https://github.com/wpdew-com/git_docs .; rm .gitignore; rm readme.md; rm -r -fo .git; rm -rf .github; rm -rf site;
+git clone https://github.com/wpdew-com/Nginx-PHP-Composer-MySql-phpMyAdmin .; rm .gitignore; rm readme.md; rm -r -fo .git; rm -rf .github; rm -rf site;
 ```
 
 ```
