@@ -1,0 +1,12 @@
+{
+    "name": "wpdew/myapp",
+    "authors": [
+        {
+            "name": "Aleks Moroz",
+            "email": "aleksmorro@gmail.com"
+        }
+    ],
+    "require": {
+        "wpdew/ebash": "^1.0"
+    }
+}

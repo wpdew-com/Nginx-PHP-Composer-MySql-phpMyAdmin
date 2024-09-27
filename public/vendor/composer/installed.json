@@ -1,0 +1,55 @@
+{
+    "packages": [
+        {
+            "name": "wpdew/ebash",
+            "version": "v1.0.5",
+            "version_normalized": "1.0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wpdew/ebash.git",
+                "reference": "7931b9527030066594344a2945e7e3ba3946ba28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wpdew/ebash/zipball/7931b9527030066594344a2945e7e3ba3946ba28",
+                "reference": "7931b9527030066594344a2945e7e3ba3946ba28",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2||^8.1"
+            },
+            "time": "2024-05-11T11:55:01+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Wpdew\\Ebash\\": "src/"
+                },
+                "classmap": [
+                    "src/aliases.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleks Moroz",
+                    "email": "aleksmorro@gmail.com",
+                    "homepage": "https://wpdew.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "My class for ebash",
+            "homepage": "https://github.com/wpdew-com/ebash",
+            "support": {
+                "issues": "https://github.com/wpdew/ebash/issues",
+                "source": "https://github.com/wpdew/ebash/tree/v1.0.5"
+            },
+            "install-path": "../wpdew/ebash"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
