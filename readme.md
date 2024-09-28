@@ -39,7 +39,7 @@
 ## :dart: Про збірку ##
 
 
-This simple repository can help you install all necessary stacks to build simple PHP projects.
+Цей простий репозиторій може допомогти вам встановити всі необхідні стеки для створення простих проектів PHP.
 
 ## :sparkles: Використані ресурси ##
 
@@ -48,23 +48,24 @@ This simple repository can help you install all necessary stacks to build simple
 
 | Stack  | Description |
 | ------------- | ------------- |
-| PHP  | PHP (recursive acronym for PHP: Hypertext Preprocessor) - programming language, widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.  |
-| Composer  | Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.  |
-| MySQL  | Database management system  |
-| phpmyadmin  | phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL, MariaDB and MongoDB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.  |
+| PHP  | PHP (рекурсивний акронім від PHP: Hypertext Preprocessor) — мова програмування, широко використовувана мова сценаріїв загального призначення з відкритим кодом, яка особливо підходить для веб-розробки та може бути вбудована в HTML. |
+| Composer  | Composer — це інструмент для керування залежностями в PHP. Він дозволяє вам оголосити бібліотеки, від яких залежить ваш проект, і він буде керувати (встановлювати/оновлювати) ними.  |
+| MySQL  | Система управління базами даних  |
+| phpmyadmin  | phpMyAdmin — це безкоштовний програмний інструмент, написаний на PHP, призначений для адміністрування MySQL через Інтернет. phpMyAdmin підтримує широкий спектр операцій з MySQL, MariaDB і MongoDB. Операції, які часто використовуються (керування базами даних, таблицями, стовпцями, відношеннями, індексами, користувачами, дозволами тощо) можна виконувати через інтерфейс користувача, у той час як у вас залишається можливість безпосередньо виконувати будь-який оператор SQL.  |
 
 
 ## :rocket: Технології ##
 
 The following tools were used in this project:
 
-- [MkDocs](http://mkdocs.org/)
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
-- [Python](https://www.python.org/)
+- [PHP](https://www.php.net/)
+- [Composer](https://getcomposer.org/)
+- [MySQL](https://www.mysql.com/)
+- [phpMyAdmin](https://www.phpmyadmin.net/)
 
 ## :white_check_mark: Вимоги ##
 
-Перш ніж почати :checkered_flag:, вам потрібно встановити [Python](https://www.python.org/).
+Перш ніж почати :checkered_flag:, вам потрібно встановити [Docker](https://docs.docker.com/get-started/get-docker/).
 
 ## Установка і запуск проекту. 
 
@@ -72,27 +73,33 @@ The following tools were used in this project:
 git clone https://github.com/wpdew-com/Nginx-PHP-Composer-MySql-phpMyAdmin .; rm .gitignore; rm readme.md; rm -r -fo .git; rm -rf .github; rm -rf site;
 ```
 
-```
-pip install mkdocs
-```
+Запускаємо Docker та в корені проекту виконуємо команду:
 
 ```
-pip install mkdocs-material
+make up
 ```
 
-```
-pip install mkdocs-material-extensions
-```
+Після запуску відкриваємо браузер та переходимо за посиланням:
 
 ```
-pip install mkdocs-video 
+http://localhost:8080 - корінь проекту
+http://localhost:8080/phpmyadmin - phpMyAdmin
+```
+
+Щоб зупинити проект виконуємо команду:
+
+```
+make down 
 ```
 
 ## :checkered_flag: Команди ##
 
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `make up` - Запуск проекту.
+* `make down` - Зупинка проекту.
+* `make restart` - Перезапуск проекту.
+* `make logs` - Логи проекту.
+* `make status` - Статус проекту.
+* `make clean` - Очистка проекту.
 
 
 ## :memo: License ##
